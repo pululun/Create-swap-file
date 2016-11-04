@@ -1,1 +1,1 @@
-# Create-swap-file
+# Create swap file for debian like operating systems
