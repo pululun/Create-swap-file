@@ -6,7 +6,7 @@ read path
 echo "Введите имя swap файла. Рекомендуемо (swapFile)"
 read name
 freePlace=$(df -hk $path | awk 'NR==2{print $4}')
-let "tmp = sizeSwapFile * 1024"
+tmp=$((sizeSwapFile*1024))
 if [ "$freePlace" -gt "$tmp" ]
 then
 	echo "Подождите, создаётся swap файл"
